@@ -1,0 +1,102 @@
+<html>
+ 
+<head> 
+
+<title>About Us Page</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{font-family: Arial, Helvetica, sans-serif;
+
+background-colour: #fbfbfb;
+
+width: 850px;
+
+margin-right:auto;
+
+margin-left:auto;}
+
+h1 {color: #0eb505;}
+
+h2 {color: #161716;}
+
+p {color: #00ff00ff;}
+
+* {
+  box-sizing: border-box;
+}
+
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  height: 450px; 
+}
+
+</style>
+</head>
+<body>
+<img src="mobile_phone_website_images/Mobile_World_Station_Banner.jpg" alt="Mobile World Station Banner image"> 
+
+
+ 
+<p>
+<a href="index.html"><img src="mobile_phone_website_images/Home_Button_Small.jpg" alt="Home page hyperlink"></a> 
+<a href="phones.html"><img src="mobile_phone_website_images/Phone_Button_Small.jpg" alt="Phone page hyperlink"></a>
+<a href="simcards.html"><img src="mobile_phone_website_images/Sim_Button_Small.jpg" alt="Sim Cards page hyperlink"></a> 
+<a href="phonecases.html"><img src="mobile_phone_website_images/Cases_Button_Small.jpg" alt="Phone Cases page hyperlink"></a>
+<a href="accessories.html"><img src="mobile_phone_website_images/Accessories_Button_Small.jpg" alt="Phone Accessories page hyperlink"></a>
+</p>
+
+<script>
+
+//Time of day message script- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+var Digital=new Date()
+var hours=Digital.getHours()
+
+if (hours>=1&&hours<=11) //MESSAGE FOR MORNING
+document.write('<p>Good morning visitor! We hope you are well rested for the day ahead!</p>')
+else if (hours>=12&&hours<=17) //MESSAGE FOR AFTERNOON
+document.write('<p>Good afternoon visitor! We hope you are having a brilliant day!</p>')
+else if (hours>=18&&hours<=24) //MESSAGE FOR EVENING AND NIGHT
+document.write('<p>Good evening visitor! Thank you for choosing to give Feedback over sleep!</p>')
+
+</script>
+</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#000000;">
+    <h1> Give us some feedback </h1>
+    <p> Here at Mobile World Station, nothing is more important to us than how you feel and what you want, so if you have a problem with something or wish to give us ideas to improve our website please use this space to give us Feedback on anything wrong or what we can do to improve your user experience.
+</p>
+<form action="mailto:22143300@cambria.ac.uk" method="post" enctype="text/plain">
+        <label for="name"><p>Name:</p></label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email"><p>Email:</p></label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="Feedback"><p>Feedback:<p/></label><br>
+        <textarea id="Feedback" name="Feedback" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+
+<p>
+<a href="aboutus.html"><img src="mobile_phone_website_images/About_Us_Big.jpg" alt="link to the Give Feedback page"></a>
+<a href="contactus.html"><img src="mobile_phone_website_images/Contact_Us_Big.jpg" alt="link to the Contact Us page"></a>
+</p>
+</body>
+</html>
